@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css';
+
+import Routes from './routes';
+//Jsx html integrado no javascript 
 
 function App() {
+ // const [counter, setCounter] = useState(0);
+
+  // Array [valor, funcaoDeAtualizacao]
+  
+ /* function increment() { 
+      setCounter(counter + 1)
+      //counter += 1;
+      console.log(counter);
+    }
+ */
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    //EXEMPLO
+    // <Header title="Semana Omnistack" />
+    //propriedade automatica
+    // <Header>
+    //   Semana Omnistack
+    // </Header> 
+    /* <div>
+      <Header>Contador: {counter}</Header>
+      <button onClick={increment} >Incrementar</button>
+    </div> */
+    <Routes />
   );
 }
 
